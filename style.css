@@ -1,0 +1,69 @@
+body {
+  height: 100%;
+  cursor: crosshair;
+  background-image: url("flo-karr-1481132-unsplash.jpg");
+}
+
+
+header {
+
+
+font-family: Patua one;
+text-align: center;
+font-size: 40;
+
+}
+
+h1 {
+  color: white;
+}
+
+main {
+
+
+color: #6454e8;
+background-origin: border-box;
+font-family: Montserrat;
+}
+
+footer {
+
+background-color: grey;
+box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+
+
+
+article img {
+width: 300px;
+}
+  
+
+
+article p {
+  width: 550px;
+ 
+}
+
+footer {
+  color: white;
+}
+
+.bio {
+  box-shadow:         3px 3px 5px 6px #6454e8;
+  background-color: rgb(107, 207, 253);
+  background-origin: border-box;
+  width: 650px;
+  color: white
+}
+
+.jared {
+  font-family: patua one;
+  font-size: 30;
+}
+
+.tommy {
+  font-family: patua one;
+  font-size: 30
+}
