@@ -1,7 +1,7 @@
 body {
   height: 100%;
   cursor: crosshair;
-  background-image: url("flo-karr-1481132-unsplash.jpg");
+  background-image: url("rowan-heuvel-20508-unsplash.jpg");
 }
 
 
@@ -21,7 +21,7 @@ h1 {
 main {
 
 
-color: #6454e8;
+color: #1d146e;
 background-origin: border-box;
 font-family: Montserrat;
 }
@@ -66,4 +66,8 @@ footer {
 .tommy {
   font-family: patua one;
   font-size: 30
+}
+
+.history {
+  font-family: patua one
 }
