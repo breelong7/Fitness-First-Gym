@@ -25,3 +25,19 @@ if (fitnessGoals === 'gain muscle') {
   document.write('<p><h1>If you want to tone, Isabelle or Tommy would be great trainer options for you.</h1></p>');
 }
 
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+    greeting = 'Good evening!';
+} else if (hourNow > 12) {
+    greeting = 'Good afternoon!';
+} else if (hourNow > 0) {
+    greeting = 'Good morning!';
+} else {
+    greeting = 'Welcome!';
+}
+
+document.write('<h3>' + greeting + '<h3/>');
+
