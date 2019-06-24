@@ -69,5 +69,26 @@ footer {
 }
 
 .history {
-  font-family: patua one
+  font-family: patua one;
+}
+
+.membership {
+  box-shadow:         3px 3px 5px 6px white;
+  background-color: white;
+  background-origin: border-box;
+  width: 650px;
+  color: #6454e8
+  
+}
+
+.gold {
+  color: gold;
+}
+
+.silver {
+  color: silver
+}
+
+.bronze {
+  color: orangered
 }
