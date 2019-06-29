@@ -72,6 +72,7 @@ if (wantsToJoin === 'yes') {
 }
 
 
+
 function createNewUser(userName, userAge, userGoal) {
   var newUser = '<p>Your additional account holders name is ' + userName + ', age is ' + userAge + ', and fitness goal is ' + userGoal + ' location</p>';
   return newUser;
@@ -83,23 +84,73 @@ while (wantsToJoin !== 'yes' && wantsToJoin !== 'no')  {
   wantsToJoin = prompt('Do you want to join our gym today?');
 }
 
+// if (wantsToJoin === 'yes') {
+//   var numberOfUsers = prompt('How many account holders would you like to add?');
+
+//   for (numberOfUsers; numberOfUsers > 0; numberOfUsers--) {
+//     var newUser = {};
+//     var userName = prompt('What is the name of the additional account holder?');
+//     var userAge = prompt('What is the age of the additional account holder?');
+//     var userGoal = prompt('What is the fitness goal of the additional account holder?');
+
+//     var htmltoo = createNewUser(userName, userAge, userGoal);
+
+//     document.write(htmltoo);
+//   }
+
+
+
+
 if (wantsToJoin === 'yes') {
   var numberOfUsers = prompt('How many account holders would you like to add?');
+  var userList = [];
 
   for (numberOfUsers; numberOfUsers > 0; numberOfUsers--) {
-    var userName = prompt('What is the name of the additional account holder?');
-    var userAge = prompt('What is the age of the additional account holder?');
-    var userGoal = prompt('What is the fitness goal of the additional account holder?');
+    var newUser = {};
+    newUser.name = prompt('What is the name of the additional account holder?');
+    newUser.age = prompt('What is the age of the additional account holder?');
+    newUser.goal = prompt('What is the fitness goal of the additional account holder?');
 
-    var htmltoo = createNewUser(userName, userAge, userGoal);
+    newUser.html = createNewUser(newUser.name, newUser.age, newUser.goal);
 
-    document.write(htmltoo);
+    userList.push(newUser);
+    console.log(userList);
+    document.write(newUser.html);
   }
 
+
+// List - multiples of the same thing
+{/* <ul>
+  <li>bacon</li>
+  <li>strawberries</li>
+  <li>orange juice</li>
+  <li>champagne</li>
+</ul> */}
+
+// var brunchShoppingList = ['bacon', 'strawberries', 'orange juice', 'champagne'];
+// console.log(brunchShoppingList);
+
+// brunchShoppingList.push('fried chicken');
+// brunchShoppingList.pop('bacon');
+
+// console.log(brunchShoppingList[0]);
+
+// for (var index = 0; index < brunchShoppingList.length; index++ ) {
+//   console.log(brunchShoppingList[index]);
 
 }
 
 
+// // Object
 
+// var cat1 = {
+//   name: 'Amelia',
+//   age: 1,
+//   hobbies: 'chasing her brother',
+// };
+
+// // call the function
+// console.log(cat1.name);
+// cat1.speak();
 
 
